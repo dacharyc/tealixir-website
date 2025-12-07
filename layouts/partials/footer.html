@@ -1,0 +1,11 @@
+<footer>
+    <div class="container">
+        <p>&copy; {{ .Site.Params.copyright_year }} {{ .Site.Params.author }}. All rights reserved.</p>
+        <p>
+            {{- range $index, $link := .Site.Params.footer_links -}}
+                {{- if $index }} | {{ end -}}
+                <a href="{{ $link.url }}" style="color: #a0aec0;">{{ $link.name }}</a>
+            {{- end -}}
+        </p>
+    </div>
+</footer>

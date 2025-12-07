@@ -1,3 +1,25 @@
 baseURL = 'https://tealixir.app/'
 languageCode = 'en-us'
 title = 'TeaLixir'
+
+[params]
+  description = "Track your teas, discover your preferences, and get personalized recommendations with TeaLixir - the intelligent tea tracking app for iOS."
+  author = "Dachary Carey"
+  copyright_year = "2025"
+
+  # Footer links
+  [[params.footer_links]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+
+  [[params.footer_links]]
+    name = "Contact"
+    url = "/contact/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Disable taxonomies since we don't need them for this simple landing page
+disableKinds = ["taxonomy", "term"]

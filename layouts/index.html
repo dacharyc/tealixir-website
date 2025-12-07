@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "head.html" . }}
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/logo.png" alt="TeaLixir Logo">
+                    <h1>{{ .Site.Title }}</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/privacy-policy/">Privacy</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero">
+                <h2>Your Personal Tea Journey</h2>
+                <p>Track your teas, discover your preferences, and get personalized recommendations with TeaLixir</p>
+            </div>
+
+            <div class="content-card">
+                {{ .Content }}
+            </div>
+
+            <div class="coming-soon">
+                <h2>🚀 Coming Soon to the App Store</h2>
+                <p>TeaLixir is currently in private beta. Stay tuned for the official release!</p>
+            </div>
+        </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+</body>
+</html>

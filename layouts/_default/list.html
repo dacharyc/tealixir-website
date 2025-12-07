@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "head.html" . }}
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/logo.png" alt="TeaLixir Logo">
+                    <h1><a href="/" style="text-decoration: none; color: inherit;">{{ .Site.Title }}</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/privacy-policy/">Privacy</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-card">
+                <a href="/" class="back-link">← Back to Home</a>
+                <h1>{{ .Title }}</h1>
+                {{ .Content }}
+            </div>
+        </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+</body>
+</html>
