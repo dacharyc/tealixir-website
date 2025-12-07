@@ -16,10 +16,10 @@ title = 'TeaLixir'
     name = "Contact"
     url = "/contact/"
 
+# Disable taxonomies since we don't need them for this simple landing page
+disableKinds = ["taxonomy", "term"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-# Disable taxonomies since we don't need them for this simple landing page
-disableKinds = ["taxonomy", "term"]
