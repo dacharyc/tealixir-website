@@ -4,6 +4,11 @@ description: "Privacy Policy for the TeaLixir App and Website"
 draft: false
 ---
 
+This privacy policy contains information for both the TeaLixir App and the TeaLixir Website.
+
+- [The TeaLixir App](#the-tealixir-app)
+- [The TeaLixir Website](#the-tealixir-website)
+
 # The TeaLixir App
 
 Dachary Carey built the TeaLixir App. This SERVICE is provided by Dachary Carey and is intended for use as-is.

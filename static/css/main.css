@@ -154,9 +154,44 @@ main {
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+}
+
+/* Specific layouts based on number of cards */
+.feature-grid.cards-1 {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-grid.cards-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-grid.cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-grid.cards-4 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 5+ cards use default 3-column layout */
+.feature-grid.cards-5,
+.feature-grid.cards-6,
+.feature-grid.cards-7,
+.feature-grid.cards-8,
+.feature-grid.cards-9 {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .feature-card {
@@ -187,17 +222,17 @@ main {
 }
 
 .feature-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .feature-content li {
-    color: #4a5568;
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
+    color: #4a5568 !important;
+    margin-bottom: 0.8rem !important;
+    padding-left: 1.5rem !important;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.5 !important;
 }
 
 .feature-content li:before {
@@ -247,8 +282,10 @@ main {
 }
 
 .why-card p {
+    color: white !important;
     opacity: 0.9;
     line-height: 1.6;
+    margin-bottom: 0;
 }
 
 /* Coming Soon Section */
@@ -282,6 +319,29 @@ main {
     margin-bottom: 2rem;
 }
 
+/* Content Card (Homepage shortcodes) */
+.content-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
 .page-content h1 {
     color: #2d3748;
     font-size: 2.5rem;
@@ -294,7 +354,7 @@ main {
 .page-content h2 {
     color: #2d3748;
     font-size: 1.8rem;
-    margin: 2rem 0 1rem 0;
+    margin: 3rem 0 1.5rem 0;
     font-weight: 600;
     border-bottom: 1px solid #e2e8f0;
     padding-bottom: 0.5rem;
@@ -303,24 +363,38 @@ main {
 .page-content h3 {
     color: #4a5568;
     font-size: 1.3rem;
-    margin: 1.5rem 0 0.8rem 0;
+    margin: 2.5rem 0 1.2rem 0;
+    font-weight: 600;
+}
+
+/* FAQ Section Styling */
+.page-content h3:first-of-type {
+    margin-top: 1.5rem;
+}
+
+.page-content h4 {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin: 2rem 0 1rem 0;
     font-weight: 600;
 }
 
 .page-content p {
     color: #4a5568;
-    margin-bottom: 1.2rem;
-    line-height: 1.7;
+    margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 .page-content ul, .page-content ol {
-    margin: 1rem 0 1.5rem 2rem;
+    margin: 2rem 0 2.5rem 0;
     color: #4a5568;
+    padding-left: 1.5rem;
 }
 
 .page-content li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    padding-left: 0.5rem;
 }
 
 .page-content strong {
@@ -334,29 +408,101 @@ main {
     font-weight: 600;
 }
 
+/* Better spacing for content sections */
+.page-content h1 + p,
+.page-content h2 + p,
+.page-content h3 + p,
+.page-content h4 + p {
+    margin-top: 0;
+}
+
+/* Improved list spacing */
+.page-content ul ul,
+.page-content ol ol {
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.page-content li:last-child {
+    margin-bottom: 0;
+}
+
+/* Better spacing after lists */
+.page-content ul + p,
+.page-content ol + p {
+    margin-top: 1.5rem;
+}
+
+.page-content ul + h2,
+.page-content ol + h2,
+.page-content ul + h3,
+.page-content ol + h3 {
+    margin-top: 3rem;
+}
+
 /* Contact Info Box */
 .contact-info {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #f8fafc;
+    border-left: 4px solid #667eea;
+    color: #2d3748;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 8px;
     margin: 2rem 0;
-    text-align: center;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
 }
 
-.contact-info h3 {
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+.contact-info h2 {
+    color: #2d3748 !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding-bottom: 0.5rem !important;
+    text-align: left !important;
 }
 
-.contact-info p {
-    margin-bottom: 0.5rem;
-    opacity: 0.9;
+.contact-info .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contact-info .contact-item {
+    margin-bottom: 0;
+}
+
+.contact-info .contact-item strong {
+    color: #667eea !important;
+    font-weight: 600 !important;
+    display: block !important;
+    margin-bottom: 0.3rem !important;
+    font-size: 0.9rem !important;
+}
+
+.contact-info .contact-item p {
+    color: #4a5568 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
 }
 
 .contact-info a {
-    color: white;
+    color: #667eea !important;
     text-decoration: underline;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #5a67d8 !important;
+    text-decoration: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .contact-info .contact-details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 /* Footer */
@@ -384,6 +530,20 @@ footer a:hover {
 }
 
 /* Responsive Design */
+/* Tablet breakpoint */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .feature-grid.cards-4 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: none;
+    }
+
+    .feature-grid.cards-5,
+    .feature-grid.cards-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile breakpoint */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -407,8 +567,18 @@ footer a:hover {
         font-size: 2rem;
     }
 
-    .feature-grid {
+    .feature-grid,
+    .feature-grid.cards-1,
+    .feature-grid.cards-2,
+    .feature-grid.cards-3,
+    .feature-grid.cards-4,
+    .feature-grid.cards-5,
+    .feature-grid.cards-6,
+    .feature-grid.cards-7,
+    .feature-grid.cards-8,
+    .feature-grid.cards-9 {
         grid-template-columns: 1fr;
+        max-width: none;
     }
 
     .why-grid {

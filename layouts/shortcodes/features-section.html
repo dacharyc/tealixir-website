@@ -1,7 +1,8 @@
 {{- $title := .Get "title" -}}
+{{- $cards := .Get "cards" | default "3" -}}
 <div class="features-section">
     <h2>{{ $title }}</h2>
-    <div class="feature-grid">
+    <div class="feature-grid cards-{{ $cards }}">
         {{ .Inner }}
     </div>
 </div>

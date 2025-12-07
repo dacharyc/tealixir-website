@@ -8,7 +8,7 @@ draft: false
 TeaLixir is an intelligent tea tracking app for iOS that helps you discover, track, and enjoy your perfect cup of tea. Whether you're a tea connoisseur or just beginning your tea journey, TeaLixir learns your preferences and guides you to your next favorite brew.
 {{< /hero-intro >}}
 
-{{< features-section title="✨ Key Features" >}}
+{{< features-section title="✨ Key Features" cards="4" >}}
 
 {{< feature-card icon="🍃" title="Comprehensive Tea Tracking" >}}
 - Track tea types (black, green, herbal, oolong, and more)
