@@ -1,0 +1,3 @@
+#!/bin/sh
+hugo
+rsync -avz public/ tealixir.app:tealixir.app/
