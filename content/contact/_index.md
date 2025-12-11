@@ -26,7 +26,25 @@ Have questions about TeaLixir? Need support? I'd love to hear from you!
 
 ## Contact Form
 
-*Note: Contact form functionality will be added when the website is deployed with a form service.*
+<div class="contact-form-container">
+<form class="contact-form" action="https://formspree.io/f/movgkzyb" method="POST">
+<div class="form-row">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email">Your Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+</div>
+<div class="form-group">
+<label for="message">Your Message</label>
+<textarea id="message" name="message" required></textarea>
+</div>
+<button type="submit" class="form-submit-btn">Send Message</button>
+</form>
+</div>
 
 ## Frequently Asked Questions
 
