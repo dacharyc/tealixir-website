@@ -19,9 +19,43 @@ If you choose to use my Service, then you agree to the collection and use of inf
 
 ## Information Collection and Use
 
-The TeaLixir App saves your tea tracking data including tea information, ratings, tasting notes, photos, and brewing instructions to Apple iCloud. This data is stored securely in your personal iCloud account and never leaves your control. I never have access to your tea data, and do not attempt to collect any data for personal use.
+### Data Storage and iCloud Integration
 
-The TeaLixir App may use device capabilities such as the camera to help you photograph tea packages for easier data entry. Photos are processed locally on your device and only saved to your iCloud account if you choose to include them with your tea records.
+TeaLixir is designed with privacy as a core principle. All your tea tracking data is stored exclusively in your personal Apple iCloud account, which means:
+
+**What Data is Stored:**
+- Tea information (name, type, origin, brand, etc.)
+- Your personal ratings and tasting notes
+- Brewing instructions and preferences
+- Photos of tea packages (if you choose to add them)
+- Purchase tracking and tea collection history
+- Your personal tea preference analysis
+
+**How iCloud Storage Works:**
+- All data is stored directly in your personal iCloud account using Apple's CloudKit framework
+- Data is encrypted both in transit and at rest using Apple's industry-standard encryption
+- Your data syncs automatically across all your Apple devices signed into the same iCloud account
+- You maintain complete ownership and control of your data at all times
+
+**Privacy Guarantees:**
+- **I never have access to your tea data** - it's stored exclusively in your iCloud account
+- **No data collection** - TeaLixir does not collect, transmit, or store any of your personal information on external servers
+- **No analytics or tracking** - the app does not track your usage or send any data to third parties
+- **Offline functionality** - the app works completely offline; internet connection is only needed for iCloud sync
+
+**Your Control:**
+- You can disable iCloud sync in your device settings if you prefer local-only storage
+- You can delete all your data by removing the app and clearing TeaLixir data from your iCloud settings
+- Your data remains private to you and is governed by Apple's iCloud Privacy Policy
+
+### Camera and Image Processing
+
+The TeaLixir App uses your device's camera to help you photograph tea packages for easier data entry through our smart scanning feature:
+
+- **Local Processing Only:** All image recognition and text extraction (OCR) happens locally on your device using Apple's Core ML framework
+- **No Image Upload:** Photos are never uploaded to external servers or transmitted over the internet
+- **Your Choice:** Photos are only saved to your iCloud account if you explicitly choose to include them with your tea records
+- **Privacy Focused:** Even when saved, photos remain in your personal iCloud storage and are never accessible to me or any third parties
 
 ## Log Data
 
@@ -35,25 +69,95 @@ Neither the TeaLixir App nor the TeaLixir Website uses these "cookies".
 
 ## Service Providers
 
-I may employ third-party companies and individuals due to the following reasons:
+TeaLixir uses Apple's services to provide core functionality while maintaining your privacy:
 
-*   To facilitate our Service;
-*   To provide the Service on our behalf;
-*   To perform Service-related services; or
-*   To assist us in analyzing how our Service is used.
+### Apple iCloud (CloudKit)
+- **Purpose:** Secure storage and synchronization of your tea data across your Apple devices
+- **Data Access:** Apple provides the storage infrastructure, but your data is encrypted and only accessible to you
+- **Privacy:** Your data is governed by Apple's iCloud Privacy Policy and Apple's commitment to user privacy
+- **Control:** You can manage your iCloud storage and delete TeaLixir data through your Apple ID settings
 
-I want to inform users of this Service that these third parties may have access to personal data. Third-party services may use analytics to collect usage about their product. However, they are obligated not to disclose or use the information for any other purpose.
+### Apple Core ML
+- **Purpose:** On-device machine learning for tea package scanning and text recognition
+- **Data Processing:** All image analysis happens locally on your device - no data is sent to Apple or any external servers
+- **Privacy:** Images and extracted text never leave your device during processing
 
-Currently, the third-party services used in this app include:
+### Important Privacy Notes:
+- **No Third-Party Analytics:** TeaLixir does not use any analytics services, crash reporting tools, or advertising networks
+- **No Data Sharing:** Your tea data is never shared with any third parties, including myself as the developer
+- **Apple's Privacy Standards:** All Apple services used by TeaLixir adhere to Apple's strict privacy guidelines and policies
 
-* Apple iCloud (for secure data storage)
-* Apple Core ML (for on-device image processing)
-
-I do not have access to any of this data.
+For more information about how Apple handles your data, please review:
+- [Apple's Privacy Policy](https://www.apple.com/privacy/)
+- [iCloud Privacy Overview](https://support.apple.com/en-us/HT208681)
 
 ## Security
 
-I value your trust in using our Service, thus I strive to use commercially acceptable means of protecting it. Your tea data is stored securely in your personal Apple iCloud account using Apple's industry-standard encryption. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+I value your trust in using TeaLixir and have designed the app with security and privacy as fundamental principles.
+
+### iCloud Security Features
+
+Your tea data benefits from Apple's enterprise-grade security infrastructure:
+
+**Encryption:**
+- Data is encrypted in transit using TLS 1.2 or higher
+- Data is encrypted at rest in Apple's data centers using AES-256 encryption
+- Encryption keys are managed by Apple's secure key management system
+
+**Access Control:**
+- Only you can access your tea data through your Apple ID authentication
+- Two-factor authentication adds an additional layer of security (when enabled on your Apple ID)
+- Data is isolated to your personal iCloud account and cannot be accessed by other users
+
+**Infrastructure Security:**
+- Apple's data centers meet or exceed industry security standards
+- Regular security audits and compliance certifications
+- Physical security measures protect the hardware storing your data
+
+### App-Level Security
+
+**Local Device Security:**
+- App data on your device is protected by iOS security features
+- Data is encrypted using your device's hardware security module
+- Face ID, Touch ID, or device passcode protect access to your device and data
+
+**No External Vulnerabilities:**
+- Since TeaLixir doesn't use external servers or APIs for data storage, there are no additional attack vectors
+- No user accounts or passwords to manage or potentially compromise
+- No web-based interfaces that could be vulnerable to common web attacks
+
+### Important Security Notes
+
+While Apple's iCloud infrastructure provides robust security, please remember:
+- Keep your Apple ID secure with a strong password and two-factor authentication
+- Keep your devices updated with the latest iOS security updates
+- No method of electronic storage or transmission is 100% secure
+- You are responsible for the security of your Apple ID and device access
+
+## Your Data Rights and Control
+
+### Data Portability and Export
+Since your data is stored in your personal iCloud account, you maintain complete control:
+
+**Accessing Your Data:**
+- All your tea data is accessible directly through the TeaLixir app on any of your devices
+- You can view, edit, or delete any individual tea record at any time
+- Photos and notes you've added are stored in standard formats in your iCloud account
+
+**Data Export:**
+- While TeaLixir doesn't currently offer a built-in export feature, your data remains in your iCloud account
+- If you need to access your data outside the app, you can contact me for assistance with data export options
+- Future versions of the app may include export functionality
+
+**Data Deletion:**
+- Delete individual tea records directly in the app
+- Remove all TeaLixir data by deleting the app and clearing TeaLixir data from your iCloud settings
+- Your data deletion is immediate and permanent
+
+### Managing iCloud Storage
+- Monitor your iCloud storage usage in your device Settings > [Your Name] > iCloud > Manage Storage
+- TeaLixir data typically uses minimal storage space
+- You can disable iCloud sync for TeaLixir specifically while keeping other iCloud features enabled
 
 ## Children's Privacy
 
@@ -63,7 +167,7 @@ I do not knowingly collect personally identifiable information from children. I 
 
 I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
 
-This policy is effective as of 2025-12-07
+This policy is effective as of 2025-12-14
 
 ## Contact Us
 
@@ -122,7 +226,7 @@ I do not knowingly collect personally identifiable information from children. I 
 
 I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
 
-This policy is effective as of 2025-12-07
+This policy is effective as of 2025-12-14
 
 **Contact Us**
 

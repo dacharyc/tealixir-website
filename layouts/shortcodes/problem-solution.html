@@ -1,0 +1,7 @@
+{{- $title := .Get "title" -}}
+<div class="problem-solution-section">
+    <h2>{{ $title }}</h2>
+    <div class="problem-solution-content">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

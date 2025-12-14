@@ -1,0 +1,18 @@
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $showDownload := .Get "showDownload" | default "false" -}}
+<div class="hero-banner">
+    <div class="hero-content">
+        <h1>{{ $title }}</h1>
+        <p class="hero-subtitle">{{ $subtitle }}</p>
+        <div class="hero-description">{{ .Inner | markdownify }}</div>
+        {{- if eq $showDownload "true" -}}
+        <div class="download-section">
+            <a href="#" class="app-store-btn">
+                <span class="download-text">Download on the</span>
+                <span class="store-name">App Store</span>
+            </a>
+        </div>
+        {{- end -}}
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $status := .Get "status" | default "coming-soon" -}}
+{{- $appStoreUrl := .Get "app_store_url" -}}
+{{- $appId := .Get "app_id" -}}
+
+{{/* Generate App Store URL from app_id if provided, otherwise use app_store_url */}}
+{{- $finalUrl := "" -}}
+{{- if $appId -}}
+    {{- $finalUrl = printf "https://apps.apple.com/app/id%s" $appId -}}
+{{- else if $appStoreUrl -}}
+    {{- $finalUrl = $appStoreUrl -}}
+{{- end -}}
+
+<div class="download-cta-section">
+    <h2>{{ $title }}</h2>
+    {{- if $subtitle -}}
+    <p class="download-subtitle">{{ $subtitle }}</p>
+    {{- end -}}
+    <div class="download-content">{{ .Inner | markdownify }}</div>
+    <div class="download-buttons">
+        {{- if and (eq $status "available") $finalUrl -}}
+        <a href="{{ $finalUrl }}" class="app-store-btn primary" target="_blank" rel="noopener">
+            <span class="download-text">Download on the</span>
+            <span class="store-name">App Store</span>
+        </a>
+        {{- else if eq $status "available" -}}
+        {{/* Status is available but no URL provided - show warning */}}
+        <div class="coming-soon-badge error">
+            <span class="badge-icon">⚠️</span>
+            <span class="badge-text">App Store URL Not Configured</span>
+        </div>
+        {{- else -}}
+        <div class="coming-soon-badge">
+            <span class="badge-icon">🚀</span>
+            <span class="badge-text">Coming Soon to the App Store</span>
+        </div>
+        {{- end -}}
+    </div>
+</div>

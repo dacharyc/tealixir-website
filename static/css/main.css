@@ -102,6 +102,89 @@ main {
     margin-right: auto;
 }
 
+/* Hero Banner Section */
+.hero-banner {
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    color: #f7fafc;
+}
+
+.hero-content .hero-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: white;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content .hero-description strong {
+    color: #f7fafc;
+    font-weight: 700;
+}
+
+/* App Store Button */
+.app-store-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+}
+
+.app-store-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.download-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+.store-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 0.2rem;
+}
+
+.download-section {
+    margin-top: 2rem;
+}
+
 /* Content Cards */
 .content-card {
     background: white;
@@ -288,6 +371,127 @@ main {
     margin-bottom: 0;
 }
 
+/* Problem Solution Section */
+.problem-solution-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.problem-solution-section h2 {
+    color: #2d3748;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.problem-solution-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+}
+
+.problem-solution-content strong {
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Smart Features Section */
+.smart-features-section {
+    margin-bottom: 4rem;
+}
+
+.smart-features-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.smart-features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.smart-feature {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.smart-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.smart-feature-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.smart-feature h3 {
+    color: #2d3748;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feature-highlight {
+    color: #667eea !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.feature-description {
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.feature-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.feature-description li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-description li:before {
+    content: "✓";
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.feature-description em {
+    color: #667eea;
+    font-style: italic;
+    font-weight: 500;
+}
+
 /* Coming Soon Section */
 .coming-soon {
     background: rgba(255, 255, 255, 0.95);
@@ -308,6 +512,248 @@ main {
 .coming-soon p {
     color: #4a5568;
     font-size: 1.1rem;
+}
+
+/* User Personas Section */
+.user-personas-section {
+    margin-bottom: 4rem;
+}
+
+.user-personas-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.persona-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.persona-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+}
+
+.persona-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.persona-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.persona-content {
+    color: white;
+    opacity: 0.95;
+}
+
+.persona-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.persona-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.persona-content li:before {
+    content: "✓";
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+}
+
+/* Key Features Grid Section */
+.key-features-section {
+    margin-bottom: 4rem;
+}
+
+.key-features-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.key-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.key-feature {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.key-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.key-feature-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.key-feature-icon {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+.key-feature h3 {
+    color: #2d3748;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.key-feature-content {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.key-feature-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-feature-content li {
+    margin-bottom: 0.6rem;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.key-feature-content li:before {
+    content: "•";
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Download CTA Section */
+.download-cta-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.download-cta-section h2 {
+    color: #2d3748;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.download-subtitle {
+    color: #667eea;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.download-content {
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-content em {
+    color: #667eea;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.download-buttons {
+    margin-top: 2rem;
+}
+
+.app-store-btn.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.app-store-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+}
+
+.coming-soon-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.coming-soon-badge.error {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    box-shadow: 0 10px 30px rgba(229, 62, 62, 0.4);
+}
+
+.badge-icon {
+    font-size: 1.3rem;
+}
+
+.badge-text {
+    font-weight: 600;
 }
 
 /* Page Content (Single Pages) */
@@ -663,11 +1109,84 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
+    /* Hero Banner Mobile */
+    .hero-banner {
+        padding: 3rem 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-content .hero-description {
+        font-size: 1.1rem;
+    }
+
+    /* Section Headers Mobile */
     .features-section h2,
-    .why-section h2 {
+    .why-section h2,
+    .smart-features-section h2,
+    .user-personas-section h2,
+    .key-features-section h2,
+    .download-cta-section h2 {
         font-size: 2rem;
     }
 
+    /* Smart Features Mobile */
+    .smart-feature {
+        padding: 2rem;
+    }
+
+    .smart-feature h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-highlight {
+        font-size: 1.1rem;
+    }
+
+    /* Personas Mobile */
+    .personas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .persona-card {
+        padding: 2rem;
+    }
+
+    /* Key Features Mobile */
+    .key-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .key-feature {
+        padding: 1.5rem;
+    }
+
+    /* Problem Solution Mobile */
+    .problem-solution-section {
+        padding: 2rem;
+    }
+
+    /* Download CTA Mobile */
+    .download-cta-section {
+        padding: 3rem 2rem;
+    }
+
+    .download-cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .download-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Existing Mobile Styles */
     .feature-grid,
     .feature-grid.cards-1,
     .feature-grid.cards-2,

@@ -1,0 +1,7 @@
+{{- $title := .Get "title" -}}
+{{- $icon := .Get "icon" | default "👤" -}}
+<div class="persona-card">
+    <div class="persona-icon">{{ $icon }}</div>
+    <h3>{{ $title }}</h3>
+    <div class="persona-content">{{ .Inner | markdownify }}</div>
+</div>

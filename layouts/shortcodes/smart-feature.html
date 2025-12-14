@@ -1,0 +1,11 @@
+{{- $icon := .Get "icon" -}}
+{{- $title := .Get "title" -}}
+{{- $highlight := .Get "highlight" -}}
+<div class="smart-feature">
+    <div class="smart-feature-icon">{{ $icon }}</div>
+    <h3>{{ $title }}</h3>
+    {{- if $highlight -}}
+    <p class="feature-highlight">{{ $highlight }}</p>
+    {{- end -}}
+    <div class="feature-description">{{ .Inner | markdownify }}</div>
+</div>
