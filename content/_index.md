@@ -1,13 +1,13 @@
 ---
 title: "TeaLixir - Your Personal Tea Journey Companion"
-description: "Finally, a tea app that actually understands tea. TeaLixir is the intelligent tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again."
+description: "Finally, a tea app that actually understands tea. TeaLixir is a tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again."
 draft: false
 ---
 
 {{< hero-banner title="TeaLixir" subtitle="Your Personal Tea Journey Companion" showDownload="true" >}}
 **Finally, a tea app that actually understands tea.**
 
-TeaLixir is the intelligent tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again. Whether you're just starting your tea journey or you're a seasoned connoisseur, TeaLixir grows with your palate.
+TeaLixir is a tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again. Whether you're just starting your tea journey or you're a seasoned connoisseur, TeaLixir grows with your palate.
 {{< /hero-banner >}}
 
 {{< problem-solution title="The Problem We Solve" >}}
@@ -21,7 +21,7 @@ TeaLixir is the intelligent tea tracking app that helps you remember what you lo
 {{< smart-features-section title="What Makes TeaLixir Special" >}}
 
 {{< smart-feature icon="📸" title="Smart Tea Scanning" highlight="Just snap a photo of your tea package – we'll do the rest." >}}
-Our advanced OCR technology reads tea packaging and automatically extracts:
+Text recognition reads tea packaging and automatically extracts:
 - Tea name and brand
 - Origin and estate information
 - Tea type and caffeine level
@@ -32,26 +32,26 @@ Our advanced OCR technology reads tea packaging and automatically extracts:
 *No more typing. No more guessing. Just point, shoot, and track.*
 {{< /smart-feature >}}
 
-{{< smart-feature icon="🧠" title="Intelligent Tea Matching" highlight="We understand tea relationships." >}}
-TeaLixir knows that "Ceylon" means Sri Lanka, recognizes estate names, and can match teas to existing brands in your collection. Our parser gets smarter with every tea you add.
+{{< smart-feature icon="🧠" title="Smart Tea Matching" highlight="We understand tea relationships." >}}
+TeaLixir knows that "Ceylon" means Sri Lanka, recognizes estate names, and matches teas to existing brands in your collection.
 {{< /smart-feature >}}
 
 {{< smart-feature icon="☁️" title="Seamless iCloud Sync" highlight="Your tea collection, everywhere." >}}
 All your data syncs automatically across your iPhone, iPad, and other devices. Start tracking on your phone, review on your tablet – it just works.
 {{< /smart-feature >}}
 
-{{< smart-feature icon="📊" title="Personal Tea Intelligence" highlight="Discover your taste patterns." >}}
+{{< smart-feature icon="📊" title="Your Tea Profile" highlight="Discover your taste patterns." >}}
 - See your favorite tea types and origins
 - Track which teas you'd buy again (and which to avoid)
-- Get personalized suggestions for new regions to explore
-- Monitor your caffeine preferences over time
+- Get suggestions for new regions and flavor notes to explore
+- Filter preferences by hot vs. iced preparation
 {{< /smart-feature >}}
 
-{{< smart-feature icon="🛒" title="Smart Purchase Tracking" highlight="Never forget a great tea again." >}}
+{{< smart-feature icon="🛒" title="Purchase Tracking" highlight="Never forget a great tea again." >}}
 - Swipe to mark teas as purchased
 - Track purchase history and frequency
 - Sort by recent purchases to reorder favorites
-- See which teas you actually drink vs. collect
+- Share your favorite teas with friends
 {{< /smart-feature >}}
 
 {{< /smart-features-section >}}
@@ -82,9 +82,9 @@ All your data syncs automatically across your iPhone, iPad, and other devices. S
 
 {{< key-features-grid title="Key Features" >}}
 
-{{< key-feature title="Smart Scanning & OCR" icon="📱" >}}
+{{< key-feature title="Smart Scanning" icon="📱" >}}
 - Multi-angle package scanning
-- Intelligent text extraction and parsing
+- Text extraction and parsing
 - Automatic brand and tea matching
 - Confidence scoring for accuracy
 {{< /key-feature >}}
@@ -99,15 +99,15 @@ All your data syncs automatically across your iPhone, iPad, and other devices. S
 {{< key-feature title="Powerful Organization" icon="🔍" >}}
 - Search across all tea details
 - Filter by type, caffeine, favorites
-- Sort by purchase date, name, or rating
+- Sort by purchase date, date added, or name
 - Brand and seller management
 {{< /key-feature >}}
 
-{{< key-feature title="Personal Insights" icon="📈" >}}
+{{< key-feature title="Your Profile" icon="📈" >}}
 - Tea preference analysis
 - Purchase pattern tracking
-- Personalized recommendations
-- Collection statistics and trends
+- Flavor and region suggestions
+- Favorites and avoid lists
 {{< /key-feature >}}
 
 {{< key-feature title="Seamless Experience" icon="✨" >}}
@@ -124,8 +124,8 @@ All your data syncs automatically across your iPhone, iPad, and other devices. S
 We understand the frustration of forgetting great teas and buying disappointing ones. TeaLixir solves real problems we've experienced ourselves.
 {{< /why-card >}}
 
-{{< why-card title="Actually Intelligent" >}}
-Unlike simple note-taking apps, TeaLixir understands tea. Our OCR knows the difference between a tea name and brewing instructions.
+{{< why-card title="Tea-Aware" >}}
+Unlike simple note-taking apps, TeaLixir understands tea. The scanner knows the difference between a tea name and brewing instructions.
 {{< /why-card >}}
 
 {{< why-card title="Grows With You" >}}
@@ -136,8 +136,8 @@ Start simple with basic ratings, then add detailed tasting notes as your palate 
 Your tea data is yours. We use iCloud for sync, so your information never touches our servers.
 {{< /why-card >}}
 
-{{< why-card title="Continuously Improving" >}}
-Regular updates add new features and improve OCR accuracy based on real-world usage.
+{{< why-card title="Actively Maintained" >}}
+Regular updates add new features and improve scanning accuracy.
 {{< /why-card >}}
 
 {{< /why-section >}}
@@ -145,5 +145,5 @@ Regular updates add new features and improve OCR accuracy based on real-world us
 {{< download-cta title="Download TeaLixir Today" subtitle="Stop buying tea you don't like. Start building a collection you love." status="coming-soon" >}}
 Available now on the App Store for iPhone and iPad.
 
-*TeaLixir - Because every cup should be perfect.*
+*TeaLixir - Remember what you love.*
 {{< /download-cta >}}
