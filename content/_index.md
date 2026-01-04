@@ -1,14 +1,31 @@
 ---
-title: "TeaLixir - Your Personal Tea Journey Companion"
+title: "TeaLixir - Smart Tea Tracking & Discovery"
 description: "Finally, a tea app that actually understands tea. TeaLixir is a tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again."
 draft: false
 ---
 
-{{< hero-banner title="TeaLixir" subtitle="Your Personal Tea Journey Companion" showDownload="true" >}}
+{{< hero-banner title="TeaLixir" subtitle="Smart Tea Tracking & Discovery" showDownload="true" >}}
 **Finally, a tea app that actually understands tea.**
 
-TeaLixir is a tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again. Whether you're just starting your tea journey or you're a seasoned connoisseur, TeaLixir grows with your palate.
+TeaLixir helps you remember what you love, discover new favorites, and never buy disappointing tea again.
 {{< /hero-banner >}}
+
+{{< screenshot-gallery title="See TeaLixir in Action" >}}
+{{< screenshot src="01_TeaCollection.png" alt="Tea Collection View" caption="Your Tea Collection" >}}
+{{< screenshot src="02_OCRScanning.png" alt="Smart OCR Scanning" caption="Smart Scanning" >}}
+{{< screenshot src="04_CupLogging.png" alt="Cup Logging" caption="Log Each Cup" >}}
+{{< screenshot src="03_ProfileAnalytics.png" alt="Profile Analytics" caption="Your Tea Profile" >}}
+{{< screenshot src="05_TeaDetail.png" alt="Tea Details" caption="Detailed Tea Info" >}}
+{{< screenshot src="06_SwipeActions.png" alt="Quick Swipe Actions" caption="Quick Actions" >}}
+{{< screenshot src="07_FilteringSearch.png" alt="Filtering and Search" caption="Filter & Search" >}}
+{{< screenshot src="09_TeaSharing.png" alt="Share Your Teas" caption="Share Favorites" >}}
+{{< /screenshot-gallery >}}
+
+{{< screenshot-gallery title="Also on iPad" >}}
+{{< screenshot src="ipad/01_TeaCollection.png" alt="iPad Tea Collection" caption="Tea Collection" device="ipad" >}}
+{{< screenshot src="ipad/03_ProfileAnalytics.png" alt="iPad Profile Analytics" caption="Profile Analytics" device="ipad" >}}
+{{< screenshot src="ipad/06_SwipeActions.png" alt="iPad Swipe Actions" caption="Quick Actions" device="ipad" >}}
+{{< /screenshot-gallery >}}
 
 {{< problem-solution title="The Problem We Solve" >}}
 **Tired of buying tea you don't like?** We've all been there – standing in the tea aisle, trying to remember if that Earl Grey was amazing or awful. Or discovering a perfect tea at a friend's house but forgetting the brand by the time you get to the store.
@@ -42,16 +59,23 @@ All your data syncs automatically across your iPhone, iPad, and other devices. S
 
 {{< smart-feature icon="📊" title="Your Tea Profile" highlight="Discover your taste patterns." >}}
 - See your favorite tea types and origins
-- Track which teas you'd buy again (and which to avoid)
+- View charts of your tea type preferences
+- Track your addition preferences (honey, milk, etc.)
 - Get suggestions for new regions and flavor notes to explore
-- Filter preferences by hot vs. iced preparation
+- Track which teas you'd buy again (and which to avoid)
 {{< /smart-feature >}}
 
-{{< smart-feature icon="🛒" title="Purchase Tracking" highlight="Never forget a great tea again." >}}
-- Swipe to mark teas as purchased
-- Track purchase history and frequency
-- Sort by recent purchases to reorder favorites
-- Share your favorite teas with friends
+{{< smart-feature icon="☕" title="Detailed Preparation Logging" highlight="Track how you like each tea prepared." >}}
+Log different preparations of the same tea – you might love a tea iced with mint but dislike it hot with honey. TeaLixir helps you remember:
+- Rate each preparation (1-5 stars)
+- Record preparation method (hot or iced)
+- Add milk, honey, sugar, and other additions
+- Note specific tasting notes experienced
+- Track whether you'd drink it that way again
+{{< /smart-feature >}}
+
+{{< smart-feature icon="📤" title="Share Your Favorites" highlight="Spread the tea love." >}}
+Found a tea you love? Create shareable cards with your photo, rating, and tasting notes to send via Messages, email, or social media.
 {{< /smart-feature >}}
 
 {{< /smart-features-section >}}
@@ -105,7 +129,7 @@ All your data syncs automatically across your iPhone, iPad, and other devices. S
 
 {{< key-feature title="Your Profile" icon="📈" >}}
 - Tea preference analysis
-- Purchase pattern tracking
+- Taste preference tracking
 - Flavor and region suggestions
 - Favorites and avoid lists
 {{< /key-feature >}}
@@ -136,14 +160,10 @@ Start simple with basic ratings, then add detailed tasting notes as your palate 
 Your tea data is yours. We use iCloud for sync, so your information never touches our servers.
 {{< /why-card >}}
 
-{{< why-card title="Actively Maintained" >}}
-Regular updates add new features and improve scanning accuracy.
-{{< /why-card >}}
-
 {{< /why-section >}}
 
-{{< download-cta title="Download TeaLixir Today" subtitle="Stop buying tea you don't like. Start building a collection you love." status="coming-soon" >}}
-Available now on the App Store for iPhone and iPad.
+{{< download-cta title="Get TeaLixir" subtitle="Stop buying tea you don't like. Start building a collection you love." status="coming-soon" >}}
+Coming soon to the App Store for iPhone and iPad.
 
 *TeaLixir - Remember what you love.*
 {{< /download-cta >}}

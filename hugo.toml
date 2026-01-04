@@ -1,6 +1,6 @@
 baseURL = 'https://tealixir.app/'
 languageCode = 'en-us'
-title = 'TeaLixir - Your Personal Tea Journey Companion'
+title = 'TeaLixir - Smart Tea Tracking & Discovery'
 
 [params]
   description = "Finally, a tea app that actually understands tea. TeaLixir is the intelligent tea tracking app that helps you remember what you love, discover new favorites, and never buy disappointing tea again."

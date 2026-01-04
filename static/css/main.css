@@ -885,6 +885,100 @@ main {
     margin-top: 3rem;
 }
 
+/* Table Styles */
+.page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem 0;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.page-content table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.page-content table tr:last-child td {
+    border-bottom: none;
+}
+
+.page-content table td:first-child {
+    font-weight: 600;
+    color: #2d3748;
+    white-space: nowrap;
+    width: 30%;
+}
+
+/* Press Kit Styles */
+.press-kit-icon {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.press-kit-icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.press-kit-icon a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.press-kit-icon .download-hint {
+    margin-top: 1rem;
+    color: #77a214;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.press-kit-screenshots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.press-kit-screenshots-ipad {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.press-kit-screenshot {
+    text-align: center;
+}
+
+.press-kit-screenshot a {
+    display: block;
+}
+
+.press-kit-screenshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.press-kit-screenshot a:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.press-kit-screenshot p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    color: #4a5568;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* Contact Info Box */
 .contact-info {
     background: #f8fafc;
@@ -1076,6 +1170,88 @@ footer a:hover {
     color: #77a214;
 }
 
+/* Screenshot Gallery */
+.screenshot-gallery {
+    margin-bottom: 4rem;
+}
+
+.screenshot-gallery h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.screenshot-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(119, 162, 20, 0.5) transparent;
+    padding: 1rem 0 2rem 0;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.screenshot-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshot-scroll-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.screenshot-scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(119, 162, 20, 0.5);
+    border-radius: 4px;
+}
+
+.screenshot-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(119, 162, 20, 0.7);
+}
+
+.screenshot-track {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.screenshot-item {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.screenshot-item img {
+    height: 500px;
+    width: auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-item img:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.screenshot-caption {
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* iPad Screenshots */
+.screenshot-ipad img {
+    height: auto;
+    width: 600px;
+    border-radius: 16px;
+}
+
 /* Responsive Design */
 /* Tablet breakpoint */
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -1212,5 +1388,48 @@ footer a:hover {
 
     nav ul {
         gap: 20px;
+    }
+
+    /* Screenshot Gallery Mobile */
+    .screenshot-gallery h2 {
+        font-size: 2rem;
+    }
+
+    .screenshot-item img {
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .screenshot-ipad img {
+        width: 85vw;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /* Press Kit Mobile */
+    .press-kit-icon img {
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+    }
+
+    .press-kit-screenshots {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .press-kit-screenshots-ipad {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .press-kit-screenshot img {
+        border-radius: 8px;
+    }
+
+    .press-kit-screenshot p {
+        font-size: 0.8rem;
     }
 }

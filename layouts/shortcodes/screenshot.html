@@ -1,0 +1,10 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $caption := .Get "caption" -}}
+{{- $device := .Get "device" | default "iphone" -}}
+<div class="screenshot-item screenshot-{{ $device }}">
+    <img src="/screenshots/{{ $src }}" alt="{{ $alt }}" loading="lazy">
+    {{- if $caption -}}
+    <p class="screenshot-caption">{{ $caption }}</p>
+    {{- end -}}
+</div>

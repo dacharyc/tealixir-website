@@ -1,0 +1,11 @@
+{{- $title := .Get "title" -}}
+<div class="screenshot-gallery">
+    {{- if $title -}}
+    <h2>{{ $title }}</h2>
+    {{- end -}}
+    <div class="screenshot-scroll-container">
+        <div class="screenshot-track">
+            {{ .Inner }}
+        </div>
+    </div>
+</div>
