@@ -26,9 +26,9 @@ TeaLixir is a tea tracking app that helps tea lovers remember what they enjoy, d
 | **Price** | $3.99 (USD) |
 | **Platforms** | iOS (iPhone and iPad) |
 | **Minimum iOS Version** | iOS 17.0+ |
-| **App ID** | Coming Soon |
-| **App Store Lini** | Coming Soon |
-| **Release Date** | Coming Soon |
+| **App ID** | 6756220562 |
+| **App Store Link** | https://apps.apple.com/us/app/prfocus/id6756220562 |
+| **Release Date** | January 6, 2026 |
 | **Category** | Food & Drink |
 | **Age Rating** | 4+ |
 | **Developer** | Dachary Carey |

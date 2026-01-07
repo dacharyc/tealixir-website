@@ -162,8 +162,8 @@ Your tea data is yours. We use iCloud for sync, so your information never touche
 
 {{< /why-section >}}
 
-{{< download-cta title="Get TeaLixir" subtitle="Stop buying tea you don't like. Start building a collection you love." status="coming-soon" >}}
-Coming soon to the App Store for iPhone and iPad.
+{{< download-cta title="Get TeaLixir" subtitle="Stop buying tea you don't like. Start building a collection you love." status="available" app_id="6756220562" >}}
+Available now on the App Store for iPhone and iPad.
 
 *TeaLixir - Remember what you love.*
 {{< /download-cta >}}
